@@ -17,3 +17,8 @@ struct Config {
     int monitor_left;                  // X11 monitor index for first instance
     int monitor_right;                 // X11 monitor index for second instance
 };
+
+/// Load configuration from a JSON file.
+Config loadConfig(const std::string& path);
+/// Save configuration to a JSON file.
+void saveConfig(const Config& config, const std::string& path);

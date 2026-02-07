@@ -12,11 +12,9 @@
  */
 
 MainWindow::MainWindow(QWidget* parent)
-    : QMainWindow(parent)
+    : QMainWindow(parent), m_config(loadConfig("config.json")), m_launcher(m_config)
 {
     // Load configuration (default path)
-    m_config = loadConfig("config.json");
-    m_launcher = Launcher(m_config);
 
     // Central widget and layout
     QWidget* central = new QWidget(this);
@@ -45,6 +43,7 @@ MainWindow::MainWindow(QWidget* parent)
     connect(m_startRightBtn, &QPushButton::clicked, this, &MainWindow::startRight);
     connect(m_stopAllBtn,    &QPushButton::clicked, this, &MainWindow::stopAll);
 }
+ 
 
 void MainWindow::log(const QString& msg)
 {
