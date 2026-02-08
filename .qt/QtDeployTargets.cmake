@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_SkyrimSplitScreen_FILE /home/jane/Skyrim-Split-Screen/SkyrimSplitScreen)
+set(__QT_DEPLOY_TARGET_SkyrimSplitScreen_TYPE EXECUTABLE)

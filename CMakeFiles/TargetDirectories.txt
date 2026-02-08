@@ -1,0 +1,5 @@
+/home/jane/Skyrim-Split-Screen/CMakeFiles/SkyrimSplitScreen.dir
+/home/jane/Skyrim-Split-Screen/CMakeFiles/edit_cache.dir
+/home/jane/Skyrim-Split-Screen/CMakeFiles/rebuild_cache.dir
+/home/jane/Skyrim-Split-Screen/CMakeFiles/SkyrimSplitScreen_autogen_timestamp_deps.dir
+/home/jane/Skyrim-Split-Screen/CMakeFiles/SkyrimSplitScreen_autogen.dir

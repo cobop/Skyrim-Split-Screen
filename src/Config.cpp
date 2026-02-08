@@ -31,6 +31,7 @@ Config loadConfig(const std::string& path)
     cfg.proton_prefix = j.value("proton_prefix", "");
     cfg.skyrim_together_url = j.value("skyrim_together_url", "");
     cfg.launch_args = j.value("launch_args", "");
+    cfg.mo2_command = j.value("mo2_command", "");
     std::string placementStr = j.value("placement", "LEFT");
     if (placementStr == "LEFT")
         cfg.placement = ScreenPlacement::LEFT;
@@ -52,6 +53,7 @@ void saveConfig(const Config& config, const std::string& path)
     j["proton_prefix"] = config.proton_prefix;
     j["skyrim_together_url"] = config.skyrim_together_url;
     j["launch_args"] = config.launch_args;
+    j["mo2_command"] = config.mo2_command;
     switch (config.placement) {
         case ScreenPlacement::LEFT:   j["placement"] = "LEFT"; break;
         case ScreenPlacement::RIGHT:  j["placement"] = "RIGHT"; break;

@@ -16,6 +16,7 @@ struct Config {
     ScreenPlacement placement;          // Enum: LEFT, RIGHT, CUSTOM
     int monitor_left;                  // X11 monitor index for first instance
     int monitor_right;                 // X11 monitor index for second instance
+    std::string mo2_command;           // Command to launch Mod Organizer 2 (optional)
 };
 
 /// Load configuration from a JSON file.

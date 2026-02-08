@@ -20,12 +20,8 @@ bool GameInstance::launch(const Config& config, ScreenPlacement side)
     }
 
     // Build the command that will be handed to Steam/Proton.
-    // Using the steam protocol URL is sufficient – the Steam client will invoke
-    // Proton automatically for the given AppID.
-    std::string command = "steam steam://run/" + config.steam_app_id;
-    if (!config.launch_args.empty()) {
-        command += " " + config.launch_args;
-    }
+    // Use a hard‑coded Mod Organizer 2 launch command that works on this system.
+    std::string command = "cd /home/jane/Games/mod-organizer-2-skyrimspecialedition/modorganizer2 && wine ModOrganizer.exe --profile \"Skyrim Steam Play\"";
 
     std::cout << "[GameInstance] Launching Skyrim ("
               << (side == ScreenPlacement::LEFT ? "LEFT" : "RIGHT")

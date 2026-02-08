@@ -1,0 +1,10 @@
+{
+    "steam_app_id": "228200",
+    "proton_prefix": "",
+    "skyrim_together_url": "",
+    "launch_args": "",
+    "placement": "LEFT",
+    "monitor_left": 0,
+    "monitor_right": 1,
+    "mo2_command": "cd /home/jane/Games/mod-organizer-2-skyrimspecialedition/modorganizer2 && wine ModOrganizer.exe --profile \"Skyrim Steam Play\""
+}
